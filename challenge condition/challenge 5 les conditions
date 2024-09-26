@@ -1,0 +1,38 @@
+#include <stdio.h>
+
+int main() {
+    int annee, x,mois,jour,heure,minute,seconde;
+    printf("donner annee : ");
+     scanf("%d", &annee);
+    printf("choisissez ce que vous voulez convertir : \n1 mois\n2 jour\n3 heure\n4 minute\n5 seconde\n");
+     scanf("%d", &x);
+
+
+     mois = 12 * annee;
+     jour = 365 * annee;
+     heure = 8760 * annee;
+     minute = 525600 * annee;
+     seconde = 31536000 * annee;
+     
+     switch(x){
+        case 1 : 
+            printf("nombre de mois : %d", mois);
+            break;
+        case 2 : 
+            printf("nombre de jour = %d", jour);
+            break;
+        case 3 : 
+            printf("nombre de heure = %d", heure);
+            break;
+        case 4 : 
+            printf("nombre de minute = %d", minute);
+            break;
+        case 5 : 
+            printf("nombre de seconde = %d", seconde);
+            break;
+    }
+    return 0;
+}
+
+    
+
